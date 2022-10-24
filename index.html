@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>OpenSea Clone </title>
+</head>
+<body>
+    <header>
+           <div class="main">
+                <div class="titleImage flexdiv">
+                    <div class="showTitleImage">
+                        <img src="img/navImage.svg" alt="title image">
+                    </div>
+                    <div class="showTitleText">
+                        OpenSea
+                    </div>
+                </div>
+                <div class="searchBar flexdiv">
+                    <div class="seachMain">
+                        <div class="searchIcon flexdiv">
+                            <span class="material-symbols-outlined"">
+                                search
+                                </span>
+                        </div>
+                        <div class="searchInput">
+                            <input type="search" style="cursor:text;"  placeholder="Search items, collections,and accounts">
+                        </div>
+                    </div>
+                </div>
+               <div class="navigation">
+                    <div class="showNavigation ">
+                        <ul>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Create</a></li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="icons">
+                    <div class="users">
+                        <span class="material-symbols-outlined">                         account_circle
+                        </span>
+                    </div>
+                    <div class="users">
+                        <span class="material-symbols-outlined">
+                            account_balance_wallet
+                            </span>
+                    </div>
+                    <div class="users">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                            </span>
+                    </div>
+                </div>
+           </div>
+           <!-- Explore,collect,and  sell NFTs -->
+           <div class="exploreWithSlider">
+               <div class="exploreText flexdiv">
+                  <h1>Explore,collect,and  sell NFTs</h1> 
+               </div>
+               <div class="carousel">
+                <section class="carouselNFT">
+                    <!-- left move button -->
+                    <div class="firstSpan">
+                        <span onclick="firstCorouseleft_mover()" class="material-symbols-outlined">
+                            arrow_back_ios
+                            </span>
+                        
+                    </div>
+                    <!--Show Products section -->
+                    <div class="spaceSectionfirstCorousel spaceSectioncss">               
+                    </div>
+                    <!-- right move button -->
+                    <div class="secondSpan">
+                        <span onclick="firstCorouselright_mover()" class="material-symbols-outlined">
+                            arrow_forward_ios
+                            </span>
+                       
+                    </div>
+                </section>
+               </div>
+           </div>
+    </header>
+
+    <!-- Trending Top -->
+    <section class="treding">
+        <div class="trendingHeading">
+            <div class="showHeading">
+                <button class="active">Trending</button>
+                <button>Top</button>
+            </div>
+            <div class="showLeftM">
+                <button>24h </button>
+                <button class="boxshadow">view all</button>
+            </div>
+        </div>
+        <div class="showTable">
+            <div class="divFisrtTable">
+                <table>
+                    <tr>
+                      <th colspan="2">COLLECTION</th>
+                      <th>FLOOR PRICE</th>
+                      <th>VOLUME</th>
+                    </tr>
+                    <tbody class="trdiv">                                        
+
+                    </tbody>
+                  </table>
+            </div>
+            <div class="divFisrtTable">
+                <table>
+                    <tr>
+                      <th colspan="2">COLLECTION</th>
+                      <th>FLOOR PRICE</th>
+                      <th>VOLUME</th>
+                    </tr>
+                    <tbody class="trdiv">                                        
+
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- new and  notable -->
+    <section class="NFT-101">
+        <div class="NFT-heading">
+            <div class="showNFT">
+                <h3>New and notable</h3>
+            </div>            
+        </div>
+        <!-- carousel -->
+        <section class="carouselNFT">
+            <!-- left move button -->
+            <div class="firstSpan"  onclick="notableleft_mover()" >
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>
+            </div>
+            <!--Show Products section -->
+            <div class="spaceSectionnotable spaceSectioncss">               
+            </div>
+            <!-- right move button -->
+            <div class="secondSpan" onclick="notablelright_mover()">
+                <span  class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span>
+               
+            </div>
+        </section>
+    </section>
+    
+
+
+     <!-- dreamers -->
+     <section class="NFT-101">
+        <div class="NFT-heading">
+            <div class="showNFT">
+                <h3>Dreamers spotlight</h3>
+            </div>            
+        </div>
+        <!-- carousel -->
+        <section class="carouselNFT">
+            <!-- left move button -->
+            <div class="firstSpan" onclick="dreamersleft_mover()">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>               
+            </div>
+            <!--Show Products section -->
+            <div class="spaceSectiondreamers spaceSectioncss">               
+            </div>
+            <!-- right move button -->
+            <div class="secondSpan"  onclick="dreamersright_mover()">
+                <span  class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span>
+            </div>
+        </section>
+    </section>
+   
+    <!-- NFT 101 -->
+    <section class="NFT-101">
+        <div class="NFT-heading">
+            <div class="showNFT">
+                <h3>NFT 101</h3>
+                <p>Get comfortable with the basics.</p>
+            </div>
+            <div class="learn-more">
+                <button>
+                    learn more
+                </button>
+            </div>
+        </div>
+        <!-- carousel -->
+        <section class="carouselNFT">
+            <!-- left move button -->
+            <div class="firstSpan" onclick="left_mover()">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>  
+            </div>
+            <!--Show Products section -->
+            <div class="spaceSectionNFT spaceSectioncss">               
+            </div>
+            <!-- right move button -->
+            <div class="secondSpan"  onclick="right_mover()">
+                <span  class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span>
+            </div>
+           
+        </section>
+    </section>
+    
+
+
+
+
+    <!-- Browse by category -->
+    <section class="Browse-by-category">
+        <div class="BrowseHeading">
+            <h3>Browse by category</h3>
+        </div>
+        <div class="BrowseImageContainer">
+                       
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-contenter">
+            <div class="footer-first">
+                <div class="footer-first-first">
+                    <strong>Stay in the loop</strong>
+                    <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops,and tips and tricks for navigation OpenSea.</p>
+                    <div class="register">
+                        <input type="search" placeholder="Your email address">
+                        <button type="button">Sign up</button>
+                    </div>
+                </div>
+                <div class="footer-first-second">
+                    <strong>join the community</strong>
+                    <div class="social">
+                        <div class="socialIcons">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png"/>
+                        </div>
+                        <div class="socialIcons">
+                            <img src="https://img.icons8.com/windows/32/FFFFFF/instagram-new.png"/>
+                        </div>
+                        <div class="socialIcons">
+                            <img src="https://img.icons8.com/material/24/FFFFFF/discord.png"/>
+                        </div>
+                        <div class="socialIcons">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/reddit.png"/>
+                          
+                        </div>
+                        <div class="socialIcons">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png"/>
+                        </div>
+                        <div class="socialIcons">
+                            <img src="https://img.icons8.com/ios-filled/50/228BE6/tiktok--v1.png" style="background-color: #ffff;"/>
+                        </div>
+                        <div class="socialIcons">
+                            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/circled-envelope.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer second section -->
+            <div class="footer-second">
+                <div class="footer-second-first">
+                    <img src="https://opensea.io/static/images/logos/opensea-white.svg" alt="opensea"><br>
+                    <strong>OpenSea</strong>
+                    <p>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
+                </div>
+                <div class="footer-second-second">
+                    <div class="footer-second-section">
+                        <p><strong>Marketplace</strong></p>
+                        <p>All NFTs</p>
+                        <p>Salana NFTs</p>
+                        <p>Art</p>
+                        <p>Collectibles</p>
+                        <p>Domain Names</p>
+                        <p>Music</p>
+                        <p>Photography</p>
+                        <p>Sports</p>
+                        <p>Trading Cards</p>
+                        <p>Utility</p>
+                        <p>Virtual Worlds</p>
+                    </div>
+                    <div class="footer-second-section">
+                        <p><strong>My Account</strong></p>
+                        <p>Profile</p>
+                        <p>Favorites</p>
+                        <p>Watchlist</p>
+                        <p>My Collections</p>
+                        <p>Settings</p>
+                        <p style="margin-top: 30%;"><strong>Stats</strong></p>
+                        <p>Rankings</p>
+                        <p>Activity</p>
+                    </div>
+                    <div class="footer-second-section">
+                        <p><strong>Resources</strong></p>
+                        <p>Learn</p>
+                        <p>Help Center</p>
+                        <p>Platform Status</p>
+                        <p>partners</p>
+                        <p>Taxes</p>
+                        <p>Blog</p>
+                        <p>Docs</p>
+                        <p>Newsletter</p>
+                    </div>
+                    <div class="footer-second-section">
+                        <p><strong>Company</strong></p>
+                        <p>About</p>
+                        <p>Careers</p>
+                        <p>Ventures</p>
+                        <p>Grants</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-last">
+                <div class="left">
+                    <p>© 2018-2022 Ozone Networks,Inc</p>
+                </div>
+                <div class="right">
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">terms of services</a>  
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="index.js"></script>
